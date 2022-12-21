@@ -14,10 +14,10 @@ class Gestor:
 
     def agregar_personaje(self, personaje):
         if personaje.nombre not in self.personajes:
-            self.personajes.append(personaje.nombre)
+            self.personajes.append(personaje)
 
     def mostrar_personaje(self):
-        for nombre, personaje in self.personajes.items():
+        for personaje in self.personajes:
             print("Nombre: {}".format(personaje.nombre))
             print("Vida: {}".format(personaje.vida))
             print("Ataque: {}".format(personaje.ataque))
@@ -41,6 +41,7 @@ gestor.agregar_personaje(caballero)
 arquero= Personaje("Arquero", 2,4,1,8)
 gestor.agregar_personaje(arquero)
 guerrero= Personaje("Guerrero", 2,4,2,4)
+gestor.agregar_personaje(guerrero)
 
 gestor.mostrar_personaje()
 
