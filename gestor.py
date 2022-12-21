@@ -14,7 +14,7 @@ class Gestor:
 
     def agregar_personaje(self, personaje):
         if personaje.nombre not in self.personajes:
-            self.personajes[personaje.nombre] = personaje
+            self.personajes.append(personaje.nombre)
 
     def mostrar_personaje(self):
         for nombre, personaje in self.personajes.items():
