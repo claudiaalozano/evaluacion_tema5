@@ -10,7 +10,7 @@ def suma(a,b):
 #creo la función para la resta
 def resta(a,b):
     try:
-        resultado = a - b
+        resultado = a-b
     except TypeError:
         print("Error: Los valores introducidos nos son validos")
         resultado = None
@@ -19,7 +19,7 @@ def resta(a,b):
 #creo la función para la multiplicación
 def multiplicacion(a,b):
     try:
-        resultado = a * b
+        resultado = a*b
     except TypeError:
         print("Error: Los valores introducidos nos son validos")
         resultado = None
@@ -28,7 +28,7 @@ def multiplicacion(a,b):
 #creo la función para la división
 def division(a,b):
     try:
-        resultado = a / b
+        resultado = a/b
     except TypeError:
         print("Error: Los valores introducidos nos son validos")
         resultado = None
