@@ -110,7 +110,7 @@ class Gestor:
     def guardar(self):
         with open("personajes", "wb") as f:
             pickle.dump(self.personajes, f)
-    ```
+  ```
 
 ### Ejercicio4:
 
