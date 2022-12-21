@@ -71,9 +71,10 @@ print(contador)
 
 with open("contador.txt", "w") as f:
     f.write(str(contador))
-    ```
+ ```
 
 ### Ejercicio3:
+
 ```
 import pickle
 
@@ -109,10 +110,10 @@ class Gestor:
     def guardar(self):
         with open("personajes", "wb") as f:
             pickle.dump(self.personajes, f)
-    
-```
+    ```
 
 ### Ejercicio4:
+
 ```
 import datetime
 import time
